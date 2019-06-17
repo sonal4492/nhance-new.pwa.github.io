@@ -16,27 +16,117 @@
     border-radius: 20px
     background-color: $white
     padding: 30px
+    margin-bottom: 20px
+    h3
+      font-size: 21px
+      font-weight: bold
+      color: $dark
+      text-align: center
+      margin: 20px 0 40px
+      text-transform: uppercase
+    &__title
+      display: flex
+      align-items: center
+      padding-bottom: 25px
+      &__img
+        width: 105px
+        height: 105px
+        border: solid 1px #bfbfbf
+        background-color: $white
+        border-radius: 100%
+        +center
+        margin-right: 20px
+        img
+          max-width: 78px
+          max-height: 78px
+      &__text
+        flex: 1
+        b
+          text-transform: uppercase
+          font-size: 12px
+          font-weight: 600
+          color: $dark
+          display: block
+          margin-bottom: 5px
+        h2
+          font-size: 18px
+          font-weight: bold
+          color: $dark
+          line-height: 1
+        span
+          font-size: 12px
+          font-weight: 600
+          color: $dark
+  &__form
+    .btn-custom
+      position: relative
+      left: 100%
+      transform: translate(-100%)
+      margin-top: 40px
+    &__radio
+      width: 100%
+      margin-bottom: 25px
+      input
+        display: none
+        &:checked + label:before
+          border: 6px solid $aqua-marine
+      label
+        font-size: 21px
+        font-weight: normal
+        color: $dark
+        +center-y
+        &:before
+          content: ''
+          width: 24px
+          height: 24px
+          border: solid 2px $brown-grey
+          display: block
+          border-radius: 100%
+          position: relative
+          top: -2px
+          +tr
+          margin-right: 20px
+        b
+          font-weight: bold
+          color: $pink-red
+          margin-left: 5px
+          display: block
+    &__data
+      position: relative
+      label
+        position: absolute
+        right: 0
+        bottom: 33px
+        img
+          width: 24px
+    &__select
+      margin-bottom: 25px
     input
       font-size: 21px
       font-weight: normal
       color: $dark
       +placeholder-color($dark)
-      padding: 15px 0
+      padding: 15px 0 10px
       margin-bottom: 25px
       border-bottom: 1px solid $dark
       width: 100%
       font-family: 'Eina03'
-    &__select
-      margin-bottom: 25px
     .selectize-input
       box-shadow: none
       border: none
       border-bottom: 1px solid $dark
       border-radius: 0
       padding: 15px 0
+    .selectize-dropdown [data-selectable]
+      font-size: 21px
+      font-weight: normal
+      color: $dark
+      padding: 15px 5px
     .selectize-input>*
       font-size: 21px
       font-weight: normal
       color: $dark
     .selectize-control.single .selectize-input input
       display: none !important
+    .selectize-dropdown
+      box-shadow: 0 0 7px 0 rgba($black, 0.4)

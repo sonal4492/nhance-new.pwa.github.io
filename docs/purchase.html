@@ -20,7 +20,7 @@
         <div class="breadcrumbs">
           <h2>purchase</h2>
         </div>
-        <div class="purchase__content">
+        <form class="purchase__content">
           <h1>Instant Buy</h1>
           <div class="purchase__block">
             <div class="purchase__block__title">
@@ -29,7 +29,7 @@
                 <h2>Propure Water Purifier</h2><span>Offer Expires on : Jan 27, 2018 00:00 AM</span>
               </div>
             </div>
-            <form class="purchase__form">
+            <div class="purchase__form">
               <div class="purchase__form__select"><select>
                   <option value="1">Product Category</option>
                   <option value="2">Product Category 2</option>
@@ -48,13 +48,20 @@
                   <option value="3">Product Category 3</option>
                   <option value="4">Product Category 4</option>
                 </select></div>
-              <div class="purchase__form__data"><input type="text" name="data" placeholder="Purchase Date"></div>
+              <div class="purchase__form__data"><input type="text" name="data" id="data" placeholder="Purchase Date"><label for="data"><img src="img/calendar.svg" alt=""></label></div>
               <div class="purchase__form__input"><input type="text" placeholder="Purchase Price"></div>
               <div class="purchase__form__input"><input type="text" placeholder="Email ID"></div>
-              <div class="purchase__form__input"><input type="tel" placeholder="Mobile number"></div><button type="submit" class="btn-custom">get otp</button>
-            </form>
+              <div class="purchase__form__input"><input type="tel" placeholder="Mobile number"></div><a type="submit" href="#verify-otp" rel="modal:open" class="btn-custom">get otp</a>
+            </div>
           </div>
-        </div>
+          <div class="purchase__block">
+            <h3>Select Service Plan Options</h3>
+            <div class="purchase__form">
+              <div class="purchase__form__radio"><input type="radio" name="radio" id="radio-1" checked><label for="radio-1">1 Year Extended Warranty <b>₹999</b></label></div>
+              <div class="purchase__form__radio"><input type="radio" name="radio" id="radio-2"><label for="radio-2">2 Year Extended Warranty <b>₹1649</b></label></div><button type="submit" class="btn-custom">buy now</button>
+            </div>
+          </div>
+        </form>
         <div class="power">
           <p>Powered by</p>
           <h4>NHANCE NOW</h4>
@@ -73,6 +80,15 @@
           <p>By NHANCE NOW</p>
         </div><a href="#" class="btn-custom nhance-app__install">Install</a>
       </div>
+      <div class="bg"></div>
+      <form id="verify-otp" class="verify-otp">
+        <div class="verify-otp__title">
+          <p>Please enter the OTP Sent to</p><strong>+91 8861380937</strong>
+        </div>
+        <div class="verify-otp__input"><input type="number">
+          <div class="verify-otp__input__decor"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        </div><a href="#" class="btn-resend-otp">Resend OTP<i class="icon icon-arrow-right"></i></a><a href="" rel="modal:close" class="btn-verify-otp">Verify </a>
+      </form>
       <!--END pop-up-->
     </div>
     <!--END out-->

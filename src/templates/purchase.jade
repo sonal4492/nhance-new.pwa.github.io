@@ -6,7 +6,7 @@ block content
   .purchase
     .breadcrumbs
       h2 purchase
-    .purchase__content
+    form.purchase__content
       h1 Instant Buy
       .purchase__block
         .purchase__block__title
@@ -16,7 +16,7 @@ block content
             b Sent by
             h2 Propure Water Purifier
             span Offer Expires on : Jan 27, 2018 00:00 AM
-        form.purchase__form
+        .purchase__form
           .purchase__form__select
             select
               option(value="1") Product Category
@@ -36,14 +36,28 @@ block content
               option(value="3") Product Category 3
               option(value="4") Product Category 4
           .purchase__form__data
-            input(type="text" name="data" placeholder="Purchase Date")
+            input(type="text" name="data" id="data" placeholder="Purchase Date")
+            label(for="data")
+              img(src="img/calendar.svg", alt="")
           .purchase__form__input
             input(type="text" placeholder="Purchase Price")
           .purchase__form__input
             input(type="text" placeholder="Email ID")
           .purchase__form__input
             input(type="tel" placeholder="Mobile number")
-          button(type="submit").btn-custom get otp
+          a(type="submit" href="#verify-otp" rel="modal:open").btn-custom get otp
+      .purchase__block
+        h3 Select Service Plan Options
+        .purchase__form
+          .purchase__form__radio
+            input(type="radio" name="radio" id="radio-1" checked)
+            label(for="radio-1") 1 Year Extended Warranty 
+              b ₹999
+          .purchase__form__radio
+            input(type="radio" name="radio" id="radio-2")
+            label(for="radio-2") 2 Year Extended Warranty 
+              b ₹1649
+          button(type="submit").btn-custom buy now
     .power
       p Powered by
       h4 NHANCE NOW
