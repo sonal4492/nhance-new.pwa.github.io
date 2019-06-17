@@ -1,21 +1,31 @@
-.pop-up
-  &-close
-    width: 30px
-    height: 30px
-    position: absolute
-    right: 20px
-    top: 20px
-    span
-      &:before, &:after
-        content: ''
-        width: 30px
-        height: 2px
-        background: $black
-        position: absolute
-        top: 13px
-      &:before
-        left: 0
-        transform: rotate(45deg)
-      &:after
-        right: 0
-        transform: rotate(-45deg)
+.nhance-app
+  background: rgb(21, 29, 45)
+  padding: 25px 35px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  position: fixed
+  bottom: 0
+  width: 100%
+  left: 0
+  &__close
+    color: $white
+    font-size: 11px
+  &__logo
+    width: 71px
+    height: 71px
+    border-radius: 15px
+    background-color: $white
+    +center
+    img
+      width: 33px
+  &__text
+    h3
+      font-size: 21px
+      font-weight: bold
+      color: $pink-red
+      margin-bottom: 10px
+      line-height: 1
+    p
+      font-size: 14px
+      color: $brown-grey

@@ -1,15 +1,9 @@
 html
 body
-  font-family: 'Open Sans', sans-serif
-  font-size: 18px
+  font-family: 'Eina03', sans-serif !important
+  font-size: 21px
   box-sizing: border-box
   position: relative
-.container
-  width: 100% !important
-  max-width: 1165px
-  box-sizing: border-box
-  +r(1200)
-    padding: 0 15px
 a
   text-decoration: none
   transition: all 0.3s
@@ -31,3 +25,76 @@ textarea
 		display: none !important
 
 
+
+
+.btn-custom
+  width: 150px
+  +center
+  height: 48px
+  border-radius: 25px
+  background-color: $pink-red
+  border: 1px solid $pink-red
+  text-transform: uppercase
+  font-size: 18px
+  font-weight: bold
+  color: $white
+
+
+.breadcrumbs
+  width: 200px
+  padding: 10px 0
+  background-color: $pink-red
+  transform: rotate(-45deg)
+  +center
+  position: absolute
+  left: -50px
+  top: 30px
+  h2
+    font-size: 13px
+    font-weight: bold
+    text-transform: uppercase
+    letter-spacing: 1px
+    color: $white
+
+
+
+.power
+  padding: 40px 0 15px
+  p
+    font-size: 12px
+    font-weight: 600
+    color: $white
+    text-align: center
+    display: block
+    margin-bottom: 5px
+    text-transform: uppercase
+  h4
+    font-size: 14px
+    font-weight: bold
+    color: $pink-red
+    text-align: center
+    display: block
+    text-transform: uppercase
+
+
+
+
+
+
+
+.pages
+  padding: 40px 0
+  h1
+    font-size: 30px
+    text-align: center
+    padding-bottom: 30px
+    color: $dark
+  ul
+    +center-column
+  a
+    font-size: 18px
+    padding: 10px 0
+    color: $dark
+    display: block
+    &:hover
+      color: $pink-red

@@ -3,7 +3,7 @@ import '../lib/selectize.min.js';
 // import modal from 'jquery-modal';
 
 //select
-// $('select').selectize();
+$('select').selectize();
 
 // //pop-up
 // $('[rel="modal:open"]').on('click', function(event) {

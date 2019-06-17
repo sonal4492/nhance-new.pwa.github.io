@@ -9,7 +9,7 @@
   font-style: normal;
 }
 
-$icon-facebook: "\EA01";
+$icon-close: "\EA01";
 
 
 %icon {
@@ -28,4 +28,4 @@ $icon-facebook: "\EA01";
   display: inline-block;
 }
 
-.icon-facebook:before { content: $icon-facebook; }
+.icon-close:before { content: $icon-close; }

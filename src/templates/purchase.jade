@@ -1,0 +1,49 @@
+---
+title: Purchase
+---
+extends layouts/_layout
+block content
+  .purchase
+    .breadcrumbs
+      h2 purchase
+    .purchase__content
+      h1 Instant Buy
+      .purchase__block
+        .purchase__block__title
+          .purchase__block__title__img
+            img(src="img/propure.png", alt="")
+          .purchase__block__title__text
+            b Sent by
+            h2 Propure Water Purifier
+            span Offer Expires on : Jan 27, 2018 00:00 AM
+        form.purchase__form
+          .purchase__form__select
+            select
+              option(value="1") Product Category
+              option(value="2") Product Category 2
+              option(value="3") Product Category 3
+              option(value="4") Product Category 4
+          .purchase__form__select
+            select
+              option(value="1") Product Category
+              option(value="2") Product Category 2
+              option(value="3") Product Category 3
+              option(value="4") Product Category 4
+          .purchase__form__select
+            select
+              option(value="1") Product Category
+              option(value="2") Product Category 2
+              option(value="3") Product Category 3
+              option(value="4") Product Category 4
+          .purchase__form__data
+            input(type="text" name="data" placeholder="Purchase Date")
+          .purchase__form__input
+            input(type="text" placeholder="Purchase Price")
+          .purchase__form__input
+            input(type="text" placeholder="Email ID")
+          .purchase__form__input
+            input(type="tel" placeholder="Mobile number")
+          button(type="submit").btn-custom get otp
+    .power
+      p Powered by
+      h4 NHANCE NOW
